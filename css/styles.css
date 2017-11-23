@@ -272,6 +272,7 @@ html {
   z-index: 1;
   color: #fff;
   transition: all .75s ease;
+  
 }
 
 .menu.menu-hide {
@@ -282,6 +283,26 @@ html {
 .menu li {
   text-align: center;
   margin-top: 50px;
+}
+
+.menu li a {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+.menu li a:hover {
+  color: #ecf0f1c2;
+}
+
+.menu li a:after {
+  display: block;
+  height: 1px;
+  background-color: rgb(211, 208, 199);
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
 #hamburger-1 {
