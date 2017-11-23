@@ -97,3 +97,12 @@ $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 
 
+$(document).ready(function(){
+  $(".hamburger").click(function(){
+    $(this).toggleClass("is-active");
+  });
+});
+
+  $('.hamburger').on('click', function(){
+    $('.menu').toggleClass('menu-hide');
+});
