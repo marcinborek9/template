@@ -66,8 +66,6 @@ $(document).ready(function() {
         });
     });
 });
-});
-
 
 var $animation_elements = $('.animation-element');
 var $window = $(window);
@@ -106,3 +104,6 @@ $(document).ready(function(){
   $('.hamburger').on('click', function(){
     $('.menu').toggleClass('menu-hide');
 });
+});
+
+
