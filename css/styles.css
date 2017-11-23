@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+.box {
+  margin-top: 50px;
+}
+
+/*----------------- Animacje nalozone na obrazki --------------------- */
+@keyframes greenPulse {
+  from { -webkit-box-shadow: 0 0 1px rgb(36, 34, 31); }
+  50% {  -webkit-box-shadow: 0 0 18px rgb(36, 34, 31); }
+  to {-webkit-box-shadow: 0 0 9px rgb(36, 34, 31); }
+} 
+
+.img-animation {
+  border:1px solid rgb(36, 34, 31);
+  outline:none;
+  animation-name: greenPulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.img-animation:hover {
+  box-shadow: 0 0 2px black;
+  -webkit-box-shadow: 0 0 2px rgb(36, 34, 31);
+  -moz-box-shadow: 0 0 2px rgb(36, 34, 31);
+  border:1px solid rgb(36, 34, 31);
+}
+
+
+
+  
+
+.header {
+  height: 100vh;
+  width: 100%;
+}
+
+.header h1 {
+  color: red;
+  text-align: center;
+}
+
+.background-img {
+  overflow: hidden;
+  position: relative;
+}
+  .background-img::before {
+    content: ' ';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('img/background.jpg') no-repeat center top fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+.box {
+  text-align: center;
+  margin: 0;
+}
+.gallery {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.gallery-img {
+  margin: 0 auto 20px auto;
+}
+
+
+.gallery, .about, .projects h2 {
+  margin-top: 0;
+  padding-top: 10px;
+  text-align: center;
+  color: red;
+}
+
+.about, .projects p {
+  color: red;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+
+
+
+
+.about {
+  height: 40vh;
+  width: 100%;
+  background: url('img/background.jpg') no-repeat center top fixed;
+}
+
+
+
+
+
+.projects {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.projects-gallery {
+  margin: 40px auto;
+}
+
+.footer {
+  height: 20vh;
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+}
+
+.footer p {
+  color: rgba(255, 255, 255, 0.692);
+}
+
+.footer-icons {
+  margin-top: 40px;
+  list-style: none;
+}
+.icons {
+margin-right: 10px;
+display: inline-block;
+}
+
+@media (max-width: 767px) { 
+  .projects-gallery {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .projects-gallery-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .projects-img {
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+}
