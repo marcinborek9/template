@@ -15,10 +15,7 @@ html {
   margin-top: 50px;
 }
 
-.section-end p{
-  margin:0;
-  padding: 0;
-}
+
 
 /*----------------- Animacje nalozone na obrazki --------------------- */
 @keyframes greenPulse {
@@ -46,6 +43,7 @@ html {
     opacity:0;
 }
 
+.s
 /*----------------- Animacje wjeżdzania obrazków z lewej strony (projekty) --------------------- */
 .animation-element {
   opacity: 0;
@@ -118,7 +116,7 @@ html {
 }
 
 .gallery p {
-  margin: 10px auto 0 auto;
+  margin: 10px auto 30px auto;
   font-weight: 300;
   letter-spacing: 2px;
 }
@@ -131,6 +129,7 @@ html {
   font-weight: 300;
   letter-spacing: 2px;
 }
+
 
 .about {
   height: 40vh;
@@ -301,6 +300,12 @@ html {
   -o-transform: translateY(-13px) rotate(-45deg);
   transform: translateY(-13px) rotate(-45deg);
 }
+
+.section-end p{
+  margin:0;
+  padding: 0;
+}
+
 @media (max-width: 767px) { 
   .header h1{
     margin-top: 100px;
