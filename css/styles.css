@@ -15,6 +15,11 @@ html {
   margin-top: 50px;
 }
 
+.section-end p{
+  margin:0;
+  padding: 0;
+}
+
 /*----------------- Animacje nalozone na obrazki --------------------- */
 @keyframes greenPulse {
   from { -webkit-box-shadow: 0 0 1px rgb(36, 34, 31); }
@@ -113,7 +118,7 @@ html {
 }
 
 .gallery p {
-  margin: 10px auto 30px auto;
+  margin: 10px auto 0 auto;
   font-weight: 300;
   letter-spacing: 2px;
 }
@@ -193,62 +198,6 @@ html {
   color: rgba(255, 255, 255, 0.692);
 }
 
-
-@media (max-width: 767px) { 
-  .header h1{
-    margin-top: 70%;
-  }
-
-  .about p {
-    margin-top: 10px;
-    font-size: 2.5vw;
-  }
-
-  .projects-gallery {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .projects-gallery-reverse {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .projects-img {
-    margin: 20px auto;
-    text-align: center;
-  }
-
-  .projects-information p {
-    margin: 20px 40px;
-  }
-}
-
-
-
-/* @media screen and (max-width: 678px){
-  testimonials
-  .animation-element.slide-left.testimonial,
-  .animation-element.slide-left.testimonial:nth-of-type(odd),
-  .animation-element.slide-left.testimonial:nth-of-type(even){
-    width: 100%;
-    margin: 0px 0px 20px 0px;
-  }
-  .animation-element.slide-left.testimonial .right,
-  .animation-element.slide-left.testimonial .left,
-  .animation-element.slide-left.testimonial .content,
-  .animation-element.slide-left.testimonial .rating{
-    text-align: center;
-    float: none;
-  }
-  .animation-element.slide-left.testimonial img{
-    width: 85px;
-    height: 85px;
-    margin-bottom: 5px;
-  }
-  
-} */
-
 .header h1{
   margin-top: 250px;
   font-size: 54px;
@@ -272,7 +221,7 @@ html {
   z-index: 1;
   color: #fff;
   transition: all .75s ease;
-  
+  list-style: none;
 }
 
 .menu.menu-hide {
@@ -352,3 +301,58 @@ html {
   -o-transform: translateY(-13px) rotate(-45deg);
   transform: translateY(-13px) rotate(-45deg);
 }
+@media (max-width: 767px) { 
+  .header h1{
+    margin-top: 100px;
+  }
+
+  .about p {
+    margin-top: 10px;
+    font-size: 2.5vw;
+  }
+
+  .projects-gallery {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projects-gallery-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .projects-img {
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .projects-information p {
+    margin: 20px 40px;
+  }
+}
+
+
+
+/* @media screen and (max-width: 678px){
+  testimonials
+  .animation-element.slide-left.testimonial,
+  .animation-element.slide-left.testimonial:nth-of-type(odd),
+  .animation-element.slide-left.testimonial:nth-of-type(even){
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+  .animation-element.slide-left.testimonial .right,
+  .animation-element.slide-left.testimonial .left,
+  .animation-element.slide-left.testimonial .content,
+  .animation-element.slide-left.testimonial .rating{
+    text-align: center;
+    float: none;
+  }
+  .animation-element.slide-left.testimonial img{
+    width: 85px;
+    height: 85px;
+    margin-bottom: 5px;
+  }
+  
+} */
+
